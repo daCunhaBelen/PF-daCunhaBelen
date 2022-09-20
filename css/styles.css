@@ -1,0 +1,391 @@
+/* reset */
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del HTML index */
+body {
+    background-image: url(../img/img-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos del header */
+header h1 {
+    display: flex;
+    justify-content: left;
+    filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+    color: white;
+    font-size: 149px;
+    font-weight: bold;
+    font-family: 'Qwitcher Grypen', cursive;
+    margin-right: 2.5rem;
+}
+
+/* alineacion del header y menu */
+section {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+/* Estilos del menu */
+header nav ul li {
+    display: inline-block;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+header nav ul li a {
+    color: #2e941a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background-color: #e8e5e6b6;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 3px;
+    padding: 4px 12px;
+    border: 1px solid #e8e5e6b6;
+}
+
+/* maquetacion grid-template */
+.contenedor {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    justify-content: space-evenly;
+    margin: 0.5rem 12rem 1rem 15rem;
+
+    /* grid-template-areas */
+    grid-template-areas:
+        "img h2"
+        "img p";
+    gap: 10px;
+}
+
+.imagen {
+    grid-area: img;
+}
+
+h2 {
+    grid-area: h2;
+}
+
+p {
+    grid-area: p;
+}
+
+/* Estilos del main   */
+main h2 {
+    color: white;
+    filter: drop-shadow(2px 2px 2px rgb(114, 105, 105));
+    font-size: 84px;
+    font-weight: bold;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+p {
+    background-color: #ffffff91;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+    height: 300px;
+}
+
+main img {
+    filter: drop-shadow(5px 4px 3px rgb(114, 105, 105));
+    margin-left: 8rem;
+    width: 62%;
+}
+
+/* Estilos del footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #4eb839;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e8e5e6;
+    padding: 0.2rem;
+}
+
+footer h3 {
+    margin-left: 1rem;
+}
+
+footer div img {
+    margin-right: 1rem;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+
+/* MEDIA QUERIS HTML*/
+@media screen and (max-width: 600px) {
+
+    /* Estilos del header */
+    header h1 {
+        text-align: right;
+        filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+        color: white;
+        font-size: 10rem;
+        font-weight: bold;
+        font-family: 'Qwitcher Grypen', cursive;
+        margin-right: 2.5rem;
+    }
+
+    /* Estilos del section (alineacion del header y el menu) */
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilos del menu */
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        background-color: rgba(245, 245, 245, 0.733);
+        color: #2b7e1b;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 1.3rem;
+        border-radius: 2rem;
+        box-shadow: 1px 1px 2px;
+        padding: 4px 250px 4px 250px;
+        margin: 0.5px;
+        border: 0.5px solid #61db4875;
+        text-align: center;
+    }
+
+    /* Estilos del main */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main h2 {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    .imagen {
+        filter: drop-shadow(5px 4px 3px rgb(114, 105, 105));
+        width: 20rem;
+        margin-right: 10rem;
+    }
+
+    /* Estilos nuevos del footer */
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #4eb839;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #e8e5e6;
+        padding: 0.5rem;
+    }
+
+    footer h3 {
+        margin-left: 1rem;
+    }
+
+    footer div img {
+        margin-right: 1rem;
+        justify-content: space-between;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+
+
+
+
+/* Estilos generales  de RECETAS*/
+/* estilos generales del header */
+/* barra del header y menu */
+.sec-dos {
+    display: flex;
+    align-items: center;
+}
+
+.sec-dos h1 {
+    display: flex;
+    text-align: left;
+    filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+/* Estilos del main */
+main {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main div {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div img {
+    width: 137px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+main div a {
+    width: 137px;
+    color: #2e941a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #e8e5e6b6;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+
+/* Estilos del footer */
+footer {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    color: #4eb839;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e8e5e6;
+    padding: 0.2rem;
+}
+
+footer h3 {
+    margin-left: 1rem;
+}
+
+footer div img {
+    margin-right: 1rem;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+
+
+/* MEDIA QUERIS RECETAS*/
+@media screen and (max-width: 600px) {
+
+    /* Estilos del header RECETAS */
+    .sec-dos h1 {
+        display: flex;
+        text-align: right;
+        filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+        color: white;
+        font-size: 10rem;
+        font-weight: bold;
+        font-family: 'Qwitcher Grypen', cursive;
+    }
+
+    /* Estilos del menu RECETAS*/
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        background-color: rgba(245, 245, 245, 0.733);
+        color: #2b7e1b;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 1.3rem;
+        border-radius: 2rem;
+        box-shadow: 1px 1px 2px;
+        padding: 4px 250px 4px 250px;
+        margin: 0.5px;
+        border: 0.5px solid #61db4875;
+        text-align: center;
+    }
+
+    /* Estilos del main RECETAS */
+main{
+    display: block;
+    background-color: #2b7e1b;
+    display: flex;
+}
+    
+    main div {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    main div img {
+        width: 40%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    main div a {
+        width: 40%;
+        text-align: center;
+        color: #2e941a;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        background-color: #e8e5e6b6;
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        text-decoration: none;
+        border-radius: 0.5rem;
+    }
+
+    /* Estilos nuevos del footer */
+    footer {
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #4eb839;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #e8e5e6;
+        padding: 0.5rem;
+    }
+
+    footer h3 {
+        margin-left: 1rem;
+    }
+
+    footer div img {
+        margin-right: 1rem;
+        justify-content: space-between;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

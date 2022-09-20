@@ -12,6 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&family=Qwitcher+Grypen:wght@400;700&display=swap"
         rel="stylesheet">
+    <!-- CSS BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <title> Segunda Pre-Entrega </title>
@@ -46,7 +49,43 @@
     </header>
     <!-- Contenido principal -->
     <main class="contenedor">
-        <img class="imagen" src="img/pancakes.png" alt="imagen principal con mordida">
+        <div class="row">
+            <div id="carouselExampleControls" class="carousel slide col-12" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../segunda-pre-entrega/img/cookies.png" class="d-block w-60" alt=" foto de cookies">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="../segunda-pre-entrega/img/dumplings.png" class="d-block w-60" alt=" foto de dumplings">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="../segunda-pre-entrega/img/tarta-fr.png" class="d-block w-60" alt=" foto de tarta de frutilla">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="../segunda-pre-entrega/img/humus.png" class="d-block w-60" alt=" foto de humus">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="../segunda-pre-entrega/img/pancakes.png" class="d-block w-60" alt=" foto de pancakes">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="../segunda-pre-entrega/img/pizza.png" class="d-block w-60" alt=" foto de pizza">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="../segunda-pre-entrega/img/falafel.png" class="d-block w-60" alt=" foto de falafel">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
         <h2> Sobre Nosotros </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit a voluptatum quis magni ab praesentium
             aliquid, quod voluptatibus delectus. Eligendi quia consectetur repellendus fugiat debitis aliquid distinctio
@@ -54,13 +93,17 @@
     </main>
     <!-- Pie de pagina -->
     <footer>
-        <h3 class="derechos"> Todos los derechos reservados </h3>        
+        <h3 class="derechos"> Todos los derechos reservados </h3>
         <div>
             <img src="img/logo-face.png" alt="logo de facebook">
             <img src="img/logo-insta.png" alt="logo de instagram">
             <img src="img/logo-what.png" alt="logo de whatsapp">
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

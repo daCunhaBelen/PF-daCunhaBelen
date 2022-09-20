@@ -58,7 +58,7 @@ header nav ul li a {
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: 0.5fr 2fr;
     justify-content: space-evenly;
-    margin: 0.5rem 12rem 1rem 15rem;
+    margin: 0.5rem 12rem 0rem 15rem;
 
     /* grid-template-areas */
     grid-template-areas:
@@ -67,7 +67,7 @@ header nav ul li a {
     gap: 10px;
 }
 
-.imagen {
+.row {
     grid-area: img;
 }
 
@@ -97,14 +97,14 @@ p {
     height: 300px;
 }
 
-main img {
+.row img {
     filter: drop-shadow(5px 4px 3px rgb(114, 105, 105));
-    margin-left: 8rem;
+    margin-left: 5rem;
     width: 62%;
 }
 
 /* Estilos del footer */
-footer {
+footer {    
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -114,7 +114,7 @@ footer {
     color: #4eb839;
     font-family: 'Montserrat', sans-serif;
     background-color: #e8e5e6;
-    padding: 0.2rem;
+    padding: 0.6rem;
 }
 
 footer h3 {
@@ -126,6 +126,20 @@ footer div img {
     justify-content: space-between;
     width: 1.5rem;
     height: 1.5rem;
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacion {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 
@@ -174,25 +188,24 @@ footer div img {
     }
 
     /* Estilos del main */
-    main {
+   .contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    main h2 {
+    .contenedor h2 {
         display: none;
     }
 
-    p {
+    .contenedor p {
         display: none;
     }
 
-    .imagen {
-        filter: drop-shadow(5px 4px 3px rgb(114, 105, 105));
-        width: 20rem;
-        margin-right: 10rem;
-    }
+    .row {
+        width: 40rem;
+}
+
 
     /* Estilos nuevos del footer */
     footer {
@@ -240,47 +253,46 @@ footer div img {
 }
 
 /* Estilos del main */
-main {
-    display: block;
+.main-recetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-main div {
+.main-recetas div {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main div img {
+.main-recetas div img {
     width: 137px;
     margin-left: 1rem;
     margin-right: 1rem;
+    align-items: center;
 }
 
-main div a {
+.main-recetas div a {
     width: 137px;
     color: #2e941a;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background-color: #e8e5e6b6;
-    padding: 1.5rem 3rem 1.5rem 3rem;
+    padding: 1rem 2rem 1rem 2rem;
     text-decoration: none;
+    text-align: center;
     border-radius: 0.5rem;
 }
 
-
 /* Estilos del footer */
 footer {
-    margin-top: 1rem;
     display: flex;
     align-items: center;
     color: #4eb839;
     font-family: 'Montserrat', sans-serif;
     background-color: #e8e5e6;
-    padding: 0.2rem;
+    padding: 0.6rem;
 }
 
 footer h3 {
@@ -293,7 +305,6 @@ footer div img {
     width: 1.5rem;
     height: 1.5rem;
 }
-
 
 
 
@@ -334,32 +345,30 @@ footer div img {
     }
 
     /* Estilos del main RECETAS */
-main{
-    display: block;
-    background-color: #2b7e1b;
-    display: flex;
-}
-    
-    main div {
-        margin-top: 1.5rem;
+    .main-recetas {
         display: flex;
-        align-items: center;
     }
-    
-    main div img {
+
+    .main-recetas div {
+        display: flex;
+        margin-top: 1.5rem;
+
+    }
+
+    .main-recetas div img {
         width: 40%;
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    
-    main div a {
+
+    .main-recetas div a {
         width: 40%;
         text-align: center;
         color: #2e941a;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         background-color: #e8e5e6b6;
-        padding: 1.5rem 3rem 1.5rem 3rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
         text-decoration: none;
         border-radius: 0.5rem;
     }

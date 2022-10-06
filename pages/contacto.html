@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Si tenes alguna receta familiar la podes compartir y llegar a miles de personas">
+    <meta name="keywords" content="recetas, familiar, contacto, notas, consejos">
 
     <!-- Tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,64 +14,72 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&family=Qwitcher+Grypen:wght@400;700&display=swap"
         rel="stylesheet">
-        
+
     <!-- Link del CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title> Contacto </title>
 </head>
+
 <body>
     <header>
         <!-- Menu -->
-        <nav>
-            <ul>
-                <li>
-                <a href="../index.html"> Inicio </a>    
-                </li>
-                <li>
-                    <a href="../pages/recetas.html"> Recetas </a>
-                </li>                
-                <li>
-                    <a href="../pages/tips.html"> Tips </a>
-                </li>                
-                <li>
-                    <a href="../pages/equivalencias.html"> Equivalencias </a>
-                </li>                
-            </ul>
-        </nav>
+        <section class="sec-cinco">
+            <h1 class="h1"> One more bite </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html"> Inicio </a>
+                    </li>
+                    <li>
+                        <a href="../pages/recetas.html"> Recetas </a>
+                    </li>
+                    <li>
+                        <a href="../pages/tips.html"> Tips </a>
+                    </li>
+                    <li>
+                        <a href="../pages/equivalencias.html"> Equivalencias </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <section>
-        <form action="">
-            <fieldset>
-                <legend> Contacto </legend>
     
-                <div>
-                    <label for="nombre"> Completa tu nombre </label>
-                    <input type="text" id="nombre" placeholder="Maria Belen da Cunha">
-                </div>
-                <div>
-                    <label for="correo"> Completa tu email </label>
-                    <input type="text" id="correo" placeholder="dacunhabelen@hotmail.com">
-                </div>
-                <div>
-                    <label for="notas"> Notas </label>
-                    <input type="text" id="correo" placeholder="completa tu consulta">
-                </div>
-    <div>
-        <input type="submit">
-        <input type="reset">
-    </div>
-    
-            </fieldset>
-        </form>
-    </section>
+    <main class="main-contacto">
+        <section class="contenedor-contacto">
+            <form action="">
+                <fieldset>
+                    <h2 class="html-cinco"> Contacto </h2>
+                    <div class="etiquetas-contacto">
+                        <div>
+                            <label for="nombre"> Completa tu nombre </label>
+                            <input class="input-contacto" type="text" id="nombre" placeholder="">
+                        </div>
+                        <div>
+                            <label for="correo"> Completa tu email </label>
+                            <input class="input-contacto" type="text" id="correo" placeholder="">
+                        </div>
+                        <div>
+                            <label for="notas"> Notas </label>
+                            <input class="nota-uno" type="text" id="correo" placeholder="">
+                        </div>
+                        <div>
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 </body>
- <!-- Pie de pagina -->
- <footer>
-    <p> Seguinos en nuestras redes y visualiza mas contenido </p>
-    <b> Todos los derechos reservados </b>
+<!-- Pie de pagina -->
+<footer>
+    <h3 class="derechos"> Todos los derechos reservados </h3>
     <div>
-        <img src="../img/logo-face.png" alt="logo de facebook">
-        <img src="../img/logo-insta.png" alt="logo de instagram">
+        <a href="https://www.facebook.com/" target="_blank"> <img src="../img/logo-face.png" alt="logo de facebook"> </a>
+        <a href="https://www.instagram.com/" target="_blank"> <img src="../img/logo-insta.png" alt="logo de instagram"> </a>
+        <a href="https://web.whatsapp.com/" target="_blank"> <img src="../img/logo-what.png" alt="logo de whatsapp"> </a>
     </div>
 </footer>
+
 </html>

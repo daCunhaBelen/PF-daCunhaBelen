@@ -1,0 +1,626 @@
+/* reset */
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del HTML index */
+body {
+    background-image: url(../img/img-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos del header */
+header h1 {
+    display: flex;
+    justify-content: left;
+    filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+    color: white;
+    font-size: 140px;
+    font-weight: bold;
+    font-family: 'Qwitcher Grypen', cursive;
+    margin-left: 1rem;
+}
+
+/* alineacion del header y menu */
+section {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+/* Estilos del menu */
+header nav ul li {
+    display: inline-block;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+header nav ul li a {
+    color: #2e941a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background-color: #e8e5e6b6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1.5px 1.5px 2px;
+    padding: 3px 10px;
+    border: 1px solid #e8e5e6b6;
+}
+
+/* maquetacion grid-template */
+.contenedor {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    justify-content: space-evenly;
+    margin: 0rem 12rem 0rem 15rem;
+
+    /* grid-template-areas */
+    grid-template-areas:
+        "img h2"
+        "img p";
+    gap: 10px;
+}
+
+.row {
+    grid-area: img;
+}
+
+h2 {
+    grid-area: h2;
+}
+
+p {
+    grid-area: p;
+}
+
+/* Estilos del main   */
+main h2 {
+    color: white;
+    filter: drop-shadow(2px 2px 2px rgb(114, 105, 105));
+    font-size: 85px;
+    font-weight: bold;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+main .intro {
+    background-color: #ffffff91;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    width: 380px;
+    height: 260px;
+    padding: 0.5rem;
+}
+
+.row img {
+    filter: drop-shadow(5px 4px 3px rgb(114, 105, 105));
+    margin-left: 5rem;
+    width: 62%;
+}
+
+/* Estilos del footer */
+footer {
+    position: fixed;
+    height: 40px;
+    left: 0%;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: #4eb839;
+    background-color: #e8e5e6;
+    padding: 0.6rem;
+}
+
+footer h3 {
+    margin-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+footer div img {
+    margin-right: 1rem;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1.5rem;
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIS HTML */
+@media screen and (max-width: 992px) {
+
+    /* Estilos del header */
+    header h1 {
+        font-size: 8rem;
+    }
+
+    /* Estilos del section (alineacion del header y el menu) */
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilos del menu */
+    header nav ul li {
+        display: inline-block;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    header nav ul li a {
+        padding: 4px 25px 4px 25px;
+        margin: 0.5px;
+    }
+
+    /* Estilos del main */
+    .contenedor {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+    .intro {
+        font-size: 0.8rem;
+        height: 195px;
+    }
+
+    /* Estilos nuevos del footer */
+    .footer-html {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 608px) {
+
+    /* Estilos del header */
+    header h1 {
+        font-size: 8rem;
+    }
+
+    /* Estilos del section (alineacion del header y el menu) */
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Estilos del menu */
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        padding: 5px 80px 5px 40px;
+        margin: 0.5rem;
+    }
+
+    /* Estilos del main */
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor h2 {
+        display: none;
+    }
+
+    .contenedor .intro {
+        display: none;
+    }
+
+    .row {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    /* Estilos nuevos del footer */
+    .footer-html {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Estilos generales  de RECETAS */
+/* estilos generales del header */
+/* barra del header y menu */
+body {
+    background-image: url(../img/img-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec-dos {
+    display: flex;
+    align-items: center;
+}
+
+.sec-dos h1 {
+    display: flex;
+    text-align: left;
+    filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+    color: white;
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+/* Estilos del main */
+.main-recetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-recetas div {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-recetas div img {
+    width: 137px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+.main-recetas div a {
+    width: 137px;
+    color: #2e941a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #e8e5e6b6;
+    padding: 1rem 2rem 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+/* Estilos del footer */
+footer {
+    position: fixed;
+    height: 40px;
+    left: 0%;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: #4eb839;
+    background-color: #e8e5e6;
+    padding: 0.6rem;
+}
+
+footer h3 {
+    margin-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+footer div img {
+    margin-right: 1rem;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1.5rem;
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIS RECETAS*/
+@media screen and (max-width: 992px) {
+
+    /* Estilos del header RECETAS */
+    .sec-dos h1 {
+        text-align: right;
+    }
+
+    /* Estilos del main RECETAS */
+    .main-recetas div {
+        margin-top: 1.5rem;
+    }
+
+    /* Estilos nuevos del footer */
+    /* Estilos nuevos del footer */
+    .footer-html {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 608px) {
+
+    /* Estilos del header RECETAS */
+    .sec-dos h1 {
+        font-size: 8rem;
+        text-align: right;
+    }
+
+    /* Estilos del menu RECETAS*/
+    header nav ul li a {
+        padding: 4px 50px 4px 50px;
+        margin: 0.25rem;
+        border: 0.5px solid #61db4875;
+        text-align: center;
+    }
+
+    /* Estilos del main RECETAS */
+    .main-recetas div {
+        width: 17rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Estilos nuevos del footer  RECETAS*/
+    .footer-html {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Estilos generales  de EQUIVALENCIAS */
+/* Estilos de los paneles de quivalencias */
+.contenedor-a {
+    width: 80%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: center;
+}
+
+.contenedor-b {
+    background-color: #e8e5e6b6;
+    height: 50%;
+    margin-right: 2rem;
+}
+
+.liquidos {
+    text-align: center;
+    background-color: #c4c2c2;
+    padding: 5px 10px 5px 10px;
+    font-size: 4rem;
+}
+
+.contenedor-c {
+    background-color: #e8e5e6b6;
+    height: 50%;
+    margin-left: 2rem;
+}
+
+.pesos {
+    text-align: center;
+    background-color: #c4c2c2;
+    padding: 5px 10px 5px 10px;
+    font-size: 4rem;
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+.etiquetas {
+    padding: 10px 100px 15px 15px;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.etiquetas-dos {
+    padding: 10px 70px 15px 15px;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+input {
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 0.3rem;
+}
+
+/* MEDIA QUERIS EQUIVALENCIAS*/
+@media screen and (max-width: 992px) {
+    .contenedor-a {
+        margin-top: 3rem;
+    }
+
+    .contenedor-b {
+        height: 25%;
+    }
+
+    .contenedor-c {
+        height: 50%;
+        margin-left: 2rem;
+    }
+
+    .liquidos {
+        padding: 2.5px 5px 2.5px 5px;
+        font-size: 3rem;
+    }
+
+    .pesos {
+        padding: 2.5px 5px 2.5px 5px;
+        font-size: 3rem;
+    }
+
+    form {
+        padding: 5px 2.5px;
+    }
+
+    .etiquetas {
+        padding: 5px 50px 7.5px 7.5px;
+        font-size: 0.8rem;
+    }
+
+    .etiquetas-dos {
+        padding: 5px 50px 7.5px 7.5px;
+        font-size: 0.8rem;
+    }
+
+    input {
+        padding: 2.5px;
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    .contenedor-a {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-b {
+        height: 25%;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-c {
+        margin-left: 0rem;
+    }
+}
+
+/* Estilos generales  de TIPS */
+main {
+    display: flex;
+}
+
+.tips {
+    background-color: #e8e5e6b6;
+    text-decoration: none;
+    margin: 3rem 1rem 2rem 1rem;
+    border-radius: 1.5rem;
+    padding: 6px 20px;
+    border: 1px solid #e8e5e6b6;
+    width: 27rem;
+}
+
+.cebolla {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.control {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.harina {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.tips p {
+    margin-top: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIS EQUIVALENCIAS*/
+@media screen and (max-width: 992px) {
+    main {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Estilos generales  de CONTACTO */
+
+.contenedor-contacto {
+    background-color: #2e941a;
+    width: 50%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: center;
+}
+
+.html-cinco {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #4eb839;
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+.etiquetas {
+    padding: 10px 100px 15px 15px;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.input {
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 0.3rem;
+}

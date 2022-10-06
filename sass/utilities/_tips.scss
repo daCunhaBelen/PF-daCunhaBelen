@@ -1,0 +1,88 @@
+/* Estilos generales  de TIPS */
+body {
+    background-image: url(../img/img-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* estilos generales del header */
+/* barra del header y menu */
+.sec-cuatro {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        display: flex;
+        text-align: left;
+        filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+        color: white;
+        font-size: 6.5rem;
+        font-weight: bold;
+        font-family: 'Qwitcher Grypen', cursive;
+    }
+}
+
+/* Estilos del main */
+main {
+    display: flex;
+}
+
+.tips {
+    background-color: #e8e5e6b6;
+    text-decoration: none;
+    margin: 3rem 1rem 2rem 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid #e8e5e6b6;
+    padding: 6px 20px;
+    width: 27rem;
+
+    .cebolla {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: white;
+        filter: drop-shadow(4px 4px 2px rgb(101, 97, 97));
+    }
+
+    .control {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: white;
+        filter: drop-shadow(4px 4px 2px rgb(101, 97, 97));
+    }
+
+    .harina {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: white;
+        filter: drop-shadow(4px 4px 2px rgb(101, 97, 97));
+    }
+
+    .explicacion {
+        margin-top: 0.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilos del footer */
+@include pie-de-pagina;
+
+/* MEDIA QUERIS TIPS*/
+@media screen and (max-width: 992px) {
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}

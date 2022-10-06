@@ -1,0 +1,217 @@
+/* Estilos generales  de EQUIVALENCIAS */
+body {
+    background-image: url(../img/img-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos del header */
+/* Estilos del header */
+.sec-tres {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        display: flex;
+        text-align: left;
+        filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+        color: white;
+        font-size: 6.5rem;
+        font-weight: bold;
+        font-family: 'Qwitcher Grypen', cursive;
+    }
+}
+
+/* Estilos de los paneles de quivalencias */
+/* Estilos del main */
+.contenedor-a {
+    width: 80%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: center;
+    border-radius: 1.5rem;
+
+    .contenedor-b {
+        background-color: $color-principal;
+        height: 100%;
+        margin-right: 2rem;
+        border-radius: 1.5rem;
+        border: 1px solid #a09fa0b6;
+
+        .liquidos {
+            font-family: 'Qwitcher Grypen', cursive;
+            filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+            color: white;
+            text-align: center;
+            background-color: #c4c2c2;
+            border-radius: 1.5rem;
+            padding: 5px 10px 5px 10px;
+            font-size: 4rem;
+        }
+
+        form {
+            padding: 10px 5px;
+            box-sizing: border-box;
+
+            fieldset {
+                border: none;
+
+                .etiquetas {
+                    padding: 10px 100px 15px 15px;
+                    text-align: right;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1rem;
+
+                    input {
+                        padding: 5px;
+                        box-sizing: border-box;
+                        margin-bottom: 0.3rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.contenedor-c {
+    background-color: $color-principal;
+    height: 100%;
+    margin-left: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #a09fa0b6;
+
+    .pesos {
+        font-family: 'Qwitcher Grypen', cursive;
+        filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+        color: white;
+        text-align: center;
+        background-color: #c4c2c2;
+        padding: 5px 10px 5px 10px;
+        font-size: 4rem;
+        border-radius: 1.5rem;
+    }
+
+    form {
+        padding: 10px 5px;
+        box-sizing: border-box;
+
+        fieldset {
+            border: none;
+
+            .etiquetas-dos {
+                padding: 10px 70px 15px 15px;
+                text-align: right;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
+
+                input {
+                    padding: 5px;
+                    box-sizing: border-box;
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+    }
+}
+
+/* Estilos del footer */
+/* Estilos del footer */
+@include pie-de-pagina;
+
+@keyframes animacion {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIS EQUIVALENCIAS*/
+@media screen and (max-width: 992px) {
+    .contenedor-a {
+        margin-top: 3rem;
+    }
+
+    .contenedor-b {
+        height: 25%;
+    }
+
+    .contenedor-c {
+        height: 50%;
+        margin-left: 2rem;
+    }
+
+    .liquidos {
+        padding: 2.5px 5px 2.5px 5px;
+        font-size: 3rem;
+    }
+
+    .pesos {
+        padding: 2.5px 5px 2.5px 5px;
+        font-size: 3rem;
+    }
+
+    form {
+        padding: 5px 2.5px;
+    }
+
+    .etiquetas {
+        padding: 5px 50px 7.5px 7.5px;
+        font-size: 0.8rem;
+    }
+
+    .etiquetas-dos {
+        padding: 5px 50px 7.5px 7.5px;
+        font-size: 0.8rem;
+    }
+
+    input {
+        padding: 2.5px;
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    .contenedor-a {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-b {
+        height: 25%;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-c {
+        margin-left: 0rem;
+    }
+}
+
+/* MEDIA QUERIS TIPS*/
+@media screen and (max-width: 992px) {
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}

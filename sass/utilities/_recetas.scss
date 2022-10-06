@@ -1,0 +1,109 @@
+/* Estilos generales  de RECETAS */
+body {
+    background-image: url(../img/img-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* estilos generales del header */
+/* barra del header y menu */
+.sec-dos {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        display: flex;
+        text-align: left;
+        filter: drop-shadow(4px 4px 2px rgb(182, 174, 174));
+        color: white;
+        font-size: 6.5rem;
+        font-weight: bold;
+        font-family: 'Qwitcher Grypen', cursive;
+    }
+}
+
+/* Estilos del main */
+.main-recetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    div {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 137px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            align-items: center;
+        }
+
+        a {
+            width: 137px;
+            color: #2e941a;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            background-color: $color-principal;
+            padding: 1rem 2rem 1rem 2rem;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+/* Estilos del footer */
+@include pie-de-pagina;
+
+/* MEDIA QUERIS RECETAS*/
+@media screen and (max-width: 992px) {
+
+    /* Estilos del header RECETAS */
+    .sec-dos h1 {
+        text-align: right;
+    }
+
+    /* Estilos del main RECETAS */
+    .main-recetas div {
+        margin-top: 1.5rem;
+    }
+
+    /* Estilos nuevos del footer */
+    /* Estilos nuevos del footer */
+    .footer-html {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 608px) {
+
+    /* Estilos del header RECETAS */
+    .sec-dos h1 {
+        font-size: 8rem;
+        text-align: right;
+    }
+
+    /* Estilos del menu RECETAS*/
+    nav ul li a {
+        padding: 4px 50px 4px 50px;
+        margin: 0.25rem;
+        border: 0.5px solid #61db4875;
+        text-align: center;
+    }
+
+    /* Estilos del main RECETAS */
+    .main-recetas div {
+        width: 17rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Estilos nuevos del footer  RECETAS*/
+    .footer-html {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}

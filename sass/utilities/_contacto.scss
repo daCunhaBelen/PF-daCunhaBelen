@@ -160,5 +160,15 @@ body {
         .footer-html {
             padding: 0.5rem;
             margin-top: 2rem;
+            h3 {
+                font-size: 0.6rem;
+            }
+        
+            div img {
+                margin-right: 0.5rem;
+                padding: 2px;
+                width: 0.8rem;
+                height: 0.8rem;
+            }
         }
 }

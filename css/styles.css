@@ -53,7 +53,8 @@ header {
   justify-content: space-evenly;
   margin: 0rem 12rem 0rem 15rem;
   /* grid-template-areas */
-  grid-template-areas: "img h2" "img p";
+  grid-template-areas: "img h2"
+ "img p";
   gap: 10px; }
   .contenedor .row {
     grid-area: img; }
@@ -302,8 +303,7 @@ footer {
       flex-direction: row;
       flex-wrap: wrap; }
     .main-recetas div a {
-      width: 120px;
-      color: tomato; }
+      width: 120px; }
   .footer-html {
     padding: 0.5rem;
     margin-top: 2rem; } }

@@ -71,16 +71,16 @@ main {
 @include pie-de-pagina;
 
 /* MEDIA QUERIS TIPS*/
-@media screen and (max-width: 992px) {
-    main {
+@media screen and (max-width: 1280px) {
+    .importante {
         align-items: center;
         display: flex;
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 608px) {
-    main {
+@media screen and (max-width: 598px) {
+    .importante {
         align-items: center;
         display: flex;
         flex-direction: column;

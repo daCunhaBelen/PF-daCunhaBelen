@@ -37,10 +37,9 @@ header {
         background-color: #e8e5e6b6;
         text-decoration: none;
         font-size: 1.2rem;
-        margin-left: 1rem;
         border-radius: 1.5rem;
         box-shadow: 1.5px 1.5px 2px;
-        padding: 3px 10px;
+        padding: 5px 10px;
         border: 1px solid #e8e5e6b6; }
         header section nav ul li a:hover {
           color: #4eb839; }
@@ -116,7 +115,7 @@ footer {
     transform: translateY(0); } }
 
 /* MEDIA QUERIS HTML */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1280px) {
   header {
     /* Estilos del section (alineacion del header y el menu) */ }
     header section {
@@ -145,7 +144,7 @@ footer {
     padding: 0.5rem;
     margin-top: 2rem; } }
 
-@media screen and (max-width: 608px) {
+@media screen and (max-width: 598px) {
   header {
     /* Estilos del section (alineacion del header y el menu) */ }
     header section {
@@ -159,7 +158,7 @@ footer {
         display: flex;
         flex-direction: column; }
         header section nav ul li a {
-          padding: 5px 80px 5px 40px;
+          padding: 5px 30px 5px 30px;
           margin: 0.5rem; }
   /* Estilos del main */
   .contenedor {
@@ -216,7 +215,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .main-recetas div img {
+    .main-recetas div .mordidas {
       width: 137px;
       margin-left: 1rem;
       margin-right: 1rem;
@@ -259,35 +258,52 @@ footer {
     animation-iteration-count: infinite; }
 
 /* MEDIA QUERIS RECETAS*/
-@media screen and (max-width: 992px) {
-  /* Estilos del header RECETAS */
+@media screen and (max-width: 1280px) {
   .sec-dos h1 {
     text-align: right; }
-  /* Estilos del main RECETAS */
   .main-recetas div {
     margin-top: 1.5rem; }
-  /* Estilos nuevos del footer */
-  /* Estilos nuevos del footer */
   .footer-html {
     padding: 0.5rem;
     margin-top: 2rem; } }
 
-@media screen and (max-width: 608px) {
-  /* Estilos del header RECETAS */
+@media screen and (max-width: 990px) {
+  .sec-dos h1 {
+    text-align: right; }
+  .main-recetas div {
+    margin-top: 1rem;
+    align-items: center; }
+    .main-recetas div .mordidas {
+      width: 130px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .main-recetas div a {
+      width: 130px; }
+  .footer-html {
+    padding: 0.5rem;
+    margin-top: 2rem; } }
+
+@media screen and (max-width: 598px) {
   .sec-dos h1 {
     font-size: 8rem;
     text-align: right; }
-  /* Estilos del menu RECETAS*/
   nav ul li a {
     padding: 4px 50px 4px 50px;
     margin: 0.25rem;
     border: 0.5px solid #61db4875;
     text-align: center; }
-  /* Estilos del main RECETAS */
   .main-recetas div {
-    width: 17rem;
+    width: 10rem;
     margin-top: 0.5rem; }
-  /* Estilos nuevos del footer  RECETAS*/
+    .main-recetas div .mordidas {
+      width: 120px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .main-recetas div a {
+      width: 120px;
+      color: tomato; }
   .footer-html {
     padding: 0.5rem;
     margin-top: 2rem; } }
@@ -322,7 +338,8 @@ body {
   padding-left: 12px;
   padding-right: 12px;
   justify-content: center;
-  border-radius: 1.5rem; }
+  border-radius: 1.5rem;
+  margin-bottom: 3rem; }
   .contenedor-a .contenedor-b {
     background-color: #e8e5e6b6;
     height: 100%;
@@ -384,7 +401,6 @@ body {
           margin-bottom: 0.3rem; }
 
 /* Estilos del footer */
-/* Estilos del footer */
 footer {
   position: fixed;
   height: 40px;
@@ -419,56 +435,45 @@ footer {
     transform: translateY(0); } }
 
 /* MEDIA QUERIS EQUIVALENCIAS*/
-@media screen and (max-width: 992px) {
-  .contenedor-a {
-    margin-top: 3rem; }
-  .contenedor-b {
-    height: 25%; }
-  .contenedor-c {
-    height: 50%;
-    margin-left: 2rem; }
-  .liquidos {
-    padding: 2.5px 5px 2.5px 5px;
-    font-size: 3rem; }
-  .pesos {
-    padding: 2.5px 5px 2.5px 5px;
-    font-size: 3rem; }
-  form {
-    padding: 5px 2.5px; }
-  .etiquetas {
-    padding: 5px 50px 7.5px 7.5px;
-    font-size: 0.8rem; }
-  .etiquetas-dos {
-    padding: 5px 50px 7.5px 7.5px;
-    font-size: 0.8rem; }
-  input {
-    padding: 2.5px;
-    margin-bottom: 0.3rem; } }
-
-@media screen and (max-width: 608px) {
+@media screen and (max-width: 1280px) {
   .contenedor-a {
     margin-top: 3rem;
+    margin-bottom: 2rem; }
+    .contenedor-a .contenedor-b {
+      height: 98%; }
+      .contenedor-a .contenedor-b .liquidos {
+        padding: 2.5px 5px 2.5px 5px;
+        font-size: 2.8rem; }
+        .contenedor-a .contenedor-b .liquidos form .etiquetas {
+          padding: 5px 50px 7.5px 7.5px;
+          font-size: 0.8rem; }
+          .contenedor-a .contenedor-b .liquidos form .etiquetas input {
+            padding: 2.5px;
+            margin-bottom: 0.3rem; }
+  .contenedor-c {
+    height: 98%; }
+    .contenedor-c .pesos {
+      padding: 2.5px 5px 2.5px 5px;
+      font-size: 2.8rem; }
+      .contenedor-c .pesos form .etiquetas-dos {
+        padding: 5px 50px 7.5px 7.5px;
+        font-size: 0.8rem; }
+        .contenedor-c .pesos form .etiquetas-dos input {
+          padding: 2.5px;
+          margin-bottom: 0.3rem; } }
+
+@media screen and (max-width: 990px) {
+  .contenedor-a {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  .contenedor-b {
-    height: 25%;
-    margin-bottom: 2rem; }
-  .contenedor-c {
-    margin-left: 0rem; } }
-
-/* MEDIA QUERIS TIPS*/
-@media screen and (max-width: 992px) {
-  main {
     align-items: center;
-    display: flex;
-    flex-direction: column; } }
-
-@media screen and (max-width: 608px) {
-  main {
-    align-items: center;
-    display: flex;
-    flex-direction: column; } }
+    justify-content: center;
+    margin-bottom: 1.5rem; }
+    .contenedor-a .contenedor-b {
+      height: 95%; }
+    .contenedor-a .contenedor-c {
+      margin-top: 2rem;
+      height: 95%; } }
 
 /* Estilos generales  de TIPS */
 body {
@@ -552,14 +557,14 @@ footer {
     animation-iteration-count: infinite; }
 
 /* MEDIA QUERIS TIPS*/
-@media screen and (max-width: 992px) {
-  main {
+@media screen and (max-width: 1280px) {
+  .importante {
     align-items: center;
     display: flex;
     flex-direction: column; } }
 
-@media screen and (max-width: 608px) {
-  main {
+@media screen and (max-width: 598px) {
+  .importante {
     align-items: center;
     display: flex;
     flex-direction: column; } }
@@ -586,10 +591,10 @@ body {
 /* Estilos del main*/
 .main-contacto .contenedor-contacto {
   background-color: #e8e5e6b6;
-  width: 45%;
+  width: 40%;
   height: 100%;
   display: flex;
-  margin: 1rem auto 0 auto;
+  margin: 1rem auto 3rem auto;
   padding-left: 6px;
   padding-right: 6px;
   justify-content: center;
@@ -609,16 +614,16 @@ body {
         filter: drop-shadow(4px 4px 2px #b6aeae);
         margin-bottom: 0.5rem; }
       .main-contacto .contenedor-contacto form fieldset .etiquetas-contacto {
-        padding: 10px 100px 15px 15px;
+        padding: 10px 40px 15px 10px;
         text-align: right;
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem; }
         .main-contacto .contenedor-contacto form fieldset .etiquetas-contacto .input-contacto {
           box-sizing: border-box;
           margin-bottom: 0.3rem;
-          padding-right: 70px; }
+          padding-right: 65px; }
         .main-contacto .contenedor-contacto form fieldset .etiquetas-contacto .nota-uno {
-          padding-right: 70px;
+          padding-right: 65px;
           padding-bottom: 120px;
           box-sizing: border-box;
           margin-bottom: 0.3rem; }
@@ -658,33 +663,32 @@ footer {
     transform: translateY(0); } }
 
 /* MEDIA QUERIS CONTACTO */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1280px) {
   .contenedor-contacto {
-    justify-content: center;
-    margin: 3rem auto 3rem auto;
-    width: 40%; }
-  form {
-    padding: 5px 2.5px; }
-  .etiquetas {
-    padding: 10px 40px 15px 15px; }
-  .input-contacto {
-    padding-right: 35px; }
-  .nota-uno {
-    padding-bottom: 60px; } }
+    width: 85%; }
+    .contenedor-contacto form fieldset {
+      padding: 5px 2.5px; }
+      .contenedor-contacto form fieldset .etiquetas-contacto .input-contacto {
+        padding-right: 35px; }
+      .contenedor-contacto form fieldset .etiquetas-contacto .nota-uno {
+        padding-right: 35px;
+        padding-bottom: 60px; } }
 
-@media screen and (max-width: 608px) {
+@media screen and (max-width: 990px) {
   .contenedor-contacto {
-    justify-content: center;
-    margin: 2rem auto 3rem auto;
-    width: 76%; }
-  form {
-    padding: 5px 2.5px; }
-  .etiquetas {
-    padding: 5px 15px 7.5px 15px; }
-  .input-contacto {
-    padding-right: 10px; }
-  .nota-uno {
-    padding-bottom: 360px;
-    padding-right: 10px; } }
+    width: 80%; }
+    .contenedor-contacto form fieldset .etiquetas-contacto .input-contacto {
+      padding-right: 15px; }
+    .contenedor-contacto form fieldset .etiquetas-contacto .nota-uno {
+      padding-right: 15px; } }
+
+@media screen and (max-width: 598px) {
+  .contenedor-contacto {
+    background-color: aqua;
+    width: 75%; }
+    .contenedor-contacto form fieldset .input-contacto {
+      padding-right: 5px; }
+    .contenedor-contacto form fieldset .nota-uno {
+      padding-right: 5px; } }
 
 /* reset */

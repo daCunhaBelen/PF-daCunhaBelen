@@ -34,7 +34,7 @@ body {
         flex-direction: column;
         align-items: center;
 
-        img {
+        .mordidas {
             width: 137px;
             margin-left: 1rem;
             margin-right: 1rem;
@@ -59,35 +59,59 @@ body {
 @include pie-de-pagina;
 
 /* MEDIA QUERIS RECETAS*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1280px) {
 
-    /* Estilos del header RECETAS */
     .sec-dos h1 {
         text-align: right;
     }
 
-    /* Estilos del main RECETAS */
     .main-recetas div {
         margin-top: 1.5rem;
     }
 
-    /* Estilos nuevos del footer */
-    /* Estilos nuevos del footer */
     .footer-html {
         padding: 0.5rem;
         margin-top: 2rem;
     }
 }
 
-@media screen and (max-width: 608px) {
+@media screen and (max-width: 990px) {
+    .sec-dos {
 
-    /* Estilos del header RECETAS */
+        h1 {
+            text-align: right;
+        }
+    }
+
+    .main-recetas div {
+        margin-top: 1rem;
+        align-items: center;
+
+        .mordidas {
+            width: 130px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        a {
+            width: 130px;
+        }
+    }
+
+    .footer-html {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 598px) {
+
     .sec-dos h1 {
         font-size: 8rem;
         text-align: right;
     }
 
-    /* Estilos del menu RECETAS*/
     nav ul li a {
         padding: 4px 50px 4px 50px;
         margin: 0.25rem;
@@ -95,13 +119,22 @@ body {
         text-align: center;
     }
 
-    /* Estilos del main RECETAS */
     .main-recetas div {
-        width: 17rem;
+        width: 10rem;
         margin-top: 0.5rem;
+        .mordidas {
+            width: 120px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        a {
+            width: 120px;
+            color: tomato;
+        }
     }
 
-    /* Estilos nuevos del footer  RECETAS*/
     .footer-html {
         padding: 0.5rem;
         margin-top: 2rem;
